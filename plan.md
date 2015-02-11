@@ -41,5 +41,5 @@
 		* Développement d'une version "librairie" de PLM.
 		* Réalisation d'une interface cliente en utilisant [AngularJS](http://angularjs.org) et [Foundation](http://foundation.zurb.com/).
 		* Implémentation d'un protocole de communication entre les 2 composants.
-* Difficultés rencontrés, solutions proposées
+* Difficultés rencontrées, solutions proposées
 * Bilan et prochains objectifs

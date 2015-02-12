@@ -21,33 +21,31 @@
 
 ## 200 exercises { data-transition="none" }
 
-![Welcome](img/welcome.png)
+<img data-src="img/welcome.png" alt="Welcome" width="80%" height="80%"/>
 
 ------
 
 ## 200 exercises { data-transition="none" }
 
-![Hanoï](img/hanoi.png)
+<img data-src="img/hanoi.png" alt="Hanoï" width="80%" height="80%"/>
 
 ------
 
 ## 200 exercises { data-transition="none" }
 
-![Lunar landing](img/lunar-landing.png)
+<img data-src="img/lunar-landing.png" alt="Lunar landing" width="80%" height="80%"/>
 
 ------
 
 ## Programming languages
 
-**TODO:** Insert logos
-![Java's logo](img/java.png)
-![Scala's logo](img/scala.png)
+<img data-src="img/programming-languages-logos.svg" alt="Programming Languages"/>
 
 ------
 
 ## Languages
 
-**TODO:** Insert flags
+<img data-src="img/languages-flags.svg" alt="Flags"/>
 
 # ADT's goals
 
@@ -104,7 +102,9 @@
 
 # Next steps
 
-# Thanks for listening
+------
+
+## Thanks for listening
 
 Do you have any questions?
 

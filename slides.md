@@ -11,46 +11,82 @@
 
 # Existing
 
-# Fat client
+------
+
+## Fat client
 
 **TODO:** Talk about Java and Swing
 
-# 200 exercises
+------
+
+## 200 exercises
 
 **TODO:** Insert screenshots of exercises
 
-# Programming languages
+------
+
+## Programming languages
 
 **TODO:** Insert logos
 ![Java's logo](img/java.png)
 ![Scala's logo](img/scala.png)
 
-# Languages
+------
+
+## Languages
 
 **TODO:** Insert flags
 
 # ADT's goals
 
-# Improving the software
+------
+
+## Improving the software
 
 - Fix known bugs
 - Set up Continuous Integration
 
-# Attracting students
+------
 
-# and teachers
+## Attracting students
 
-# and researchers
+- More teaching content
+- More user-friendly
+- Gamification
+
+------
+
+## And teachers
+
+- Keep track of the students' progress
+- Adapt content to their needs
+- Able to add their own content
+
+------
+
+## And researchers
+
+> - To an experimental teaching platform
+> -  How to detect students having difficulties?
+> - What are the most common errors?
 
 # Work done
 
-# First steps
+------
 
-# User tracking
+## First steps
 
-# Unit testing & CI
+------
 
-# To a web app
+## User tracking
+
+------
+
+## Unit testing & CI
+
+------
+
+## To a web app
 
 # Results
 

@@ -39,7 +39,7 @@
 <section id="what-is-plm" class="slide level1">
 <h1>What is PLM</h1>
 <ul>
-<li class="fragment">Software to teach programming</li>
+<li class="fragment">Software to learn programming</li>
 <li class="fragment">Allows students to progress at their own speed...</li>
 <li class="fragment">... while the teacher helps the ones having trouble</li>
 <li class="fragment">Used at <em>TELECOM Nancy</em> since 2008</li>
@@ -55,8 +55,24 @@
 </section>
 <section class="slide level1">
 
-<h2 id="exercises">200 exercises</h2>
-<p><strong>TODO:</strong> Insert screenshots of exercises</p>
+<h2 id="exercises" data-transition="none">200 exercises</h2>
+<figure>
+<img src="img/welcome.png" alt="Welcome" /><figcaption>Welcome</figcaption>
+</figure>
+</section>
+<section class="slide level1">
+
+<h2 id="exercises-1" data-transition="none">200 exercises</h2>
+<figure>
+<img src="img/hanoi.png" alt="Hanoï" /><figcaption>Hanoï</figcaption>
+</figure>
+</section>
+<section class="slide level1">
+
+<h2 id="exercises-2" data-transition="none">200 exercises</h2>
+<figure>
+<img src="img/lunar-landing.png" alt="Lunar landing" /><figcaption>Lunar landing</figcaption>
+</figure>
 </section>
 <section class="slide level1">
 
@@ -101,9 +117,9 @@
 
 <h2 id="and-researchers">And researchers</h2>
 <ul>
-<li class="fragment">To an experimental teaching platform</li>
-<li class="fragment">How to detect students having difficulties?</li>
-<li class="fragment">What are the most common errors?</li>
+<li>To an experimental teaching platform</li>
+<li>How to detect students having difficulties?</li>
+<li>What are the most common errors?</li>
 </ul>
 </section>
 <section id="work-done" class="slide level1">
@@ -134,6 +150,29 @@
 <section id="thanks-for-listening" class="slide level1">
 <h1>Thanks for listening</h1>
 <p>Do you have any questions?</p>
+<script>
+
+    document.getElementsByAttribute = Element.prototype.getElementsByAttribute = function(attr) {
+        var nodeList = this.getElementsByTagName('*');
+        var nodeArray = [];
+
+        for (var i = 0, elem; elem = nodeList[i]; i++) {
+            if ( elem.getAttribute(attr) ) nodeArray.push(elem);
+        }
+
+        return nodeArray;
+    };
+
+    function reportAttributeToParent(attribute) {
+        document.getElementsByAttribute(attribute).map(function (item) {
+            var elt = document.getElementById(item.id);
+            elt.parentNode.setAttribute(attribute, item.getAttribute(attribute));
+            item.removeAttribute(attribute);
+        });
+    }
+
+    reportAttributeToParent('data-transition');
+</script>
 </section>
     </div>
   </div>

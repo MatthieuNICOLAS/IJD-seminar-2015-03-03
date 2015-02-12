@@ -4,7 +4,7 @@
 
 # What is PLM
 
-> - Software to teach programming
+> - Software to learn programming
 > - Allows students to progress at their own speed...
 > - ... while the teacher helps the ones having trouble
 > - Used at *TELECOM Nancy* since 2008 
@@ -19,9 +19,21 @@
 
 ------
 
-## 200 exercises
+## 200 exercises { data-transition="none" }
 
-**TODO:** Insert screenshots of exercises
+![Welcome](img/welcome.png)
+
+------
+
+## 200 exercises { data-transition="none" }
+
+![Hanoï](img/hanoi.png)
+
+------
+
+## 200 exercises { data-transition="none" }
+
+![Lunar landing](img/lunar-landing.png)
 
 ------
 
@@ -66,9 +78,9 @@
 
 ## And researchers
 
-> - To an experimental teaching platform
-> -  How to detect students having difficulties?
-> - What are the most common errors?
+- To an experimental teaching platform
+-  How to detect students having difficulties?
+- What are the most common errors?
 
 # Work done
 
@@ -95,3 +107,27 @@
 # Thanks for listening
 
 Do you have any questions?
+
+<script>
+
+	document.getElementsByAttribute = Element.prototype.getElementsByAttribute = function(attr) {
+	    var nodeList = this.getElementsByTagName('*');
+	    var nodeArray = [];
+
+	    for (var i = 0, elem; elem = nodeList[i]; i++) {
+	        if ( elem.getAttribute(attr) ) nodeArray.push(elem);
+	    }
+
+	    return nodeArray;
+	};
+
+	function reportAttributeToParent(attribute) {
+		document.getElementsByAttribute(attribute).map(function (item) {
+			var elt = document.getElementById(item.id);
+			elt.parentNode.setAttribute(attribute, item.getAttribute(attribute));
+			item.removeAttribute(attribute);
+		});
+	}
+
+	reportAttributeToParent('data-transition');
+</script>

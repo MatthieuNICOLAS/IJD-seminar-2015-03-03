@@ -89,6 +89,11 @@
 
 ## First steps
 
+- Back-to-school season
+	- Got the students' feedback...
+	- ... and 170 bug reports
+- Solved minor issues
+
 ------
 
 ## User tracking { data-transition="none" }
@@ -104,9 +109,12 @@
 - User's actions stored as commits
 
 <pre><code data-trim>{ 
-	kind:"executed", lang:"Java",
+	kind:"executed",
+	lang:"Java",
 	exo:"welcome.lessons.welcome.instructions.Instructions", 
-	passedtests:"1", totaltests:"1", outcome:"pass"
+	passedtests:"1",
+	totaltests:"1",
+	outcome:"pass"
 }</code></pre>
 
 ------
@@ -171,14 +179,42 @@ notifications:
 
 ## To a web app
 
+------
+
+## Server-side { data-transition="none" }
+
+- Refactoring **PLM** into a library
+- Set up a server using **Play framework**
+
+<img data-src="img/play.svg" alt="Play Framework" width="30%" height="30%"/>
+
+------
+
+## Client-side { data-transition="none" }
+
+- **TODO:** What to say?
+
+<img data-src="img/foundation-angular.png" alt="Foundation + AngularJS" width="20%" height="20%"/>
+
+------
+
+## Client-side { data-transition="none" }
+
+- **TODO:** Video instead?
+
+<img data-src="img/webPLM.png" alt="webPLM" width="80%" height="80%"/>
+
+
 # Results
+
+- **TODO:** Merge it with the precedent slide?
 
 # Next steps
 
-- Set up the **CI** for **WebPLM**
+- Set up the **CI** for **webPLM**
 - Convert other universes
 - Add debug mode
-- Add C language
+- Add **C** language
 
 ------
 

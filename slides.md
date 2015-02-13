@@ -58,7 +58,7 @@
 
 ------
 
-## Attracting students
+## Attract students
 
 - More teaching content
 - More user-friendly
@@ -77,7 +77,7 @@
 ## And researchers
 
 - To an experimental teaching platform
--  How to detect students having difficulties?
+- How to detect students having difficulties?
 - What are the most common errors?
 
 # Work done
@@ -88,7 +88,31 @@
 
 ------
 
-## User tracking
+## User tracking { data-transition="none" }
+
+- **Git** as a database management system
+
+<img data-src="img/git.png" alt="Git" width="50%" height="50%"/>
+
+------
+
+## User tracking { data-transition="none" }
+
+- User's actions stored as commits
+
+<pre><code data-trim>{ 
+	kind:"executed", passedtests:"1", totaltests:"1", 
+	course:"", exoInterest:"(please choose)", lang:"Java", 
+	exo:"welcome.lessons.welcome.instructions.Instructions", 
+	outcome:"pass"
+}</code></pre>
+
+------
+
+## User tracking { data-transition="none" }
+
+- Data pushed anonymously to a GitHub repository...
+- ... but lost some tracks
 
 ------
 
@@ -101,6 +125,10 @@
 # Results
 
 # Next steps
+
+- Convert other universes
+- Add debug mode
+- Add C language
 
 ------
 

@@ -1,6 +1,6 @@
 % Programmer's Learning Machine
 % Matthieu Nicolas
-% March 03, 2015
+% IJD seminar - March 03, 2015
 
 # What is PLM
 
@@ -51,10 +51,13 @@
 
 ------
 
-## Improving the software
+## Improve the software's quality
 
-- Fix known bugs
-- Set up Continuous Integration
+<div class="notes">
+	- Fix known bugs
+	- Set up Continuous Integration
+	- More features
+</div>
 
 ------
 
@@ -70,7 +73,7 @@
 
 - Keep track of the students' progress
 - Adapt content to their needs
-- Able to add their own content
+- Able to add their own exercises
 
 ------
 
@@ -90,7 +93,7 @@
 
 ## User tracking { data-transition="none" }
 
-- **Git** as a database management system
+- **git** as a database management system
 
 <img data-src="img/git.png" alt="Git" width="50%" height="50%"/>
 
@@ -101,22 +104,68 @@
 - User's actions stored as commits
 
 <pre><code data-trim>{ 
-	kind:"executed", passedtests:"1", totaltests:"1", 
-	course:"", exoInterest:"(please choose)", lang:"Java", 
+	kind:"executed", lang:"Java",
 	exo:"welcome.lessons.welcome.instructions.Instructions", 
-	outcome:"pass"
+	passedtests:"1", totaltests:"1", outcome:"pass"
 }</code></pre>
 
 ------
 
 ## User tracking { data-transition="none" }
 
-- Data pushed anonymously to a GitHub repository...
+- Data pushed anonymously to a **GitHub** repository...
 - ... but lost some tracks
+- Refactored and fixed the code
 
 ------
 
-## Unit testing & CI
+## Unit testing
+
+- Need to ensure the critical parts
+	- **git**
+	- exercises' solutions
+	- lessons
+
+------
+
+## Continuous Integration { data-transition="none" }
+
+<div class="notes">
+- Execute tests automatically
+	- when push to *master*
+	- or a pull-request is created
+</div>
+
+<img data-src="img/travis-ci.svg" alt="Travis CI" width="50%" height="50%"/>
+
+------
+
+## Continuous Integration { data-transition="none" }
+
+<div class="notes">
+- Easily configurable:
+</div>
+
+<pre><code data-trim>language: scala
+scala:
+  - 2.10.5
+jdk:
+  - openjdk7
+env:
+  - TEST_SUITE=unit-tests
+  - TEST_SUITE=integration-tests
+script:
+  - ant $TEST_SUITE
+notifications:
+  recipients:
+    - martin.quinson@loria.fr
+    - gerald.oster@loria.fr
+    - matthieu.nicolas@loria.fr
+  email:
+    on_success: change
+    on_failure: always
+  template:
+    - "%{repository}/%{branch} (%{commit} - %{author}): %{message}"</code></pre>
 
 ------
 
@@ -126,6 +175,7 @@
 
 # Next steps
 
+- Set up the **CI** for **WebPLM**
 - Convert other universes
 - Add debug mode
 - Add C language

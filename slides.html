@@ -11,19 +11,10 @@
   <link rel="stylesheet" href="reveal.js/css/reveal.min.css"/>
     <style type="text/css">code{white-space: pre;}</style>
     <link rel="stylesheet" href="reveal.js/css/theme/sky.css"/>
-    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
-    <script>
-      if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'reveal.js/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-      }
-    </script>
-    <!--[if lt IE 9]>
-    <script src="reveal.js/lib/js/html5shiv.js"></script>
-    <![endif]-->
+  <link rel="stylesheet" media="print" href="reveal.js/css/print/pdf.css" />
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
 </head>
 <body>
   <div class="reveal">
@@ -44,13 +35,23 @@
 <li class="fragment">Used at <em>TELECOM Nancy</em> since 2008</li>
 </ul>
 </section>
-<section id="existing" class="slide level1">
-<h1>Existing</h1>
+<section class="slide level1">
+
+<h2 id="initial-situation">Initial situation</h2>
+<p><img data-src="img/screen-PLM-1.png" alt="PLM" width="60%" height="60%"/></p>
 </section>
 <section class="slide level1">
 
-<h2 id="fat-client">Fat client</h2>
-<p><strong>TODO:</strong> Talk about Java and Swing</p>
+<h2 id="objective-situation">Objective situation</h2>
+<p><img data-src="img/screen-PLM-2.png" alt="PLM" width="60%" height="60%"/></p>
+</section>
+<section class="slide level1">
+
+<h2 id="program-execution">Program execution</h2>
+<p><img data-src="img/screen-PLM-3.png" alt="PLM" width="60%" height="60%"/></p>
+</section>
+<section id="current-state" class="slide level1">
+<h1>Current state</h1>
 </section>
 <section class="slide level1">
 
@@ -153,6 +154,7 @@
     totaltests:"1",
     outcome:"pass"
 }</code></pre>
+
 </section>
 <section class="slide level1">
 
@@ -160,7 +162,7 @@
 <ul>
 <li>Data pushed anonymously to a <strong>GitHub</strong> repository...</li>
 <li>... but lost some tracks</li>
-<li>Refactored and fixed the code</li>
+<li>Fixed and refactored the code</li>
 </ul>
 </section>
 <section class="slide level1">
@@ -192,11 +194,17 @@
 <section class="slide level1">
 
 <h2 id="continuous-integration-1" data-transition="none"> Continuous Integration</h2>
-<aside class="notes">
 <ul>
-<li>Easily configurable:</li>
-</ul>
-</aside>
+<li>Execute tests automatically when
+<ul>
+<li>someone push to <em>master</em></li>
+<li>a pull-request is created</li>
+</ul></li>
+<li>Notify us when the build state change <!--
+<div class="notes">
+- Easily configurable:
+</div>
+
 <pre><code data-trim>language: scala
 scala:
   - 2.10.5
@@ -217,6 +225,8 @@ notifications:
     on_failure: always
   template:
     - "%{repository}/%{branch} (%{commit} - %{author}): %{message}"</code></pre>
+--></li>
+</ul>
 </section>
 <section class="slide level1">
 
@@ -235,7 +245,8 @@ notifications:
 
 <h2 id="client-side" data-transition="none"> Client-side</h2>
 <ul>
-<li><strong>TODO:</strong> What to say?</li>
+<li>Built with <strong>AngularJS</strong> and <strong>Foundation</strong></li>
+<li>Dialog with the server using <strong>Websockets</strong></li>
 </ul>
 <p><img data-src="img/foundation-angular.png" alt="Foundation + AngularJS" width="20%" height="20%"/></p>
 </section>
@@ -251,6 +262,9 @@ notifications:
 <h1>Results</h1>
 <ul>
 <li><strong>TODO:</strong> Merge it with the precedent slide?</li>
+<li>Main functionalities implemented</li>
+<li>First universe adapted</li>
+<li>but works only as a local server</li>
 </ul>
 </section>
 <section id="next-steps" class="slide level1">
@@ -289,10 +303,11 @@ notifications:
 
     reportAttributeToParent('data-transition');
 </script>
+
+
 </section>
     </div>
   </div>
-
 
   <script src="reveal.js/lib/js/head.min.js"></script>
   <script src="reveal.js/js/reveal.min.js"></script>
@@ -318,5 +333,5 @@ notifications:
 //          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 ]});
     </script>
-    </body>
+  </body>
 </html>

@@ -9,13 +9,26 @@
 > - ... while the teacher helps the ones having trouble
 > - Used at *TELECOM Nancy* since 2008 
 
-# Existing
+------
+
+## Initial situation
+
+<img data-src="img/screen-PLM-1.png" alt="PLM" width="60%" height="60%"/>
 
 ------
 
-## Fat client
+## Objective situation
 
-**TODO:** Talk about Java and Swing
+<img data-src="img/screen-PLM-2.png" alt="PLM" width="60%" height="60%"/>
+
+------
+
+## Program execution
+
+<img data-src="img/screen-PLM-3.png" alt="PLM" width="60%" height="60%"/>
+
+
+# Current state
 
 ------
 
@@ -123,7 +136,7 @@
 
 - Data pushed anonymously to a **GitHub** repository...
 - ... but lost some tracks
-- Refactored and fixed the code
+- Fixed and refactored the code
 
 ------
 
@@ -150,6 +163,11 @@
 
 ## Continuous Integration { data-transition="none" }
 
+- Execute tests automatically when
+	- someone push to *master*
+	- a pull-request is created
+- Notify us when the build state change
+<!--
 <div class="notes">
 - Easily configurable:
 </div>
@@ -174,6 +192,7 @@ notifications:
     on_failure: always
   template:
     - "%{repository}/%{branch} (%{commit} - %{author}): %{message}"</code></pre>
+-->
 
 ------
 
@@ -192,7 +211,8 @@ notifications:
 
 ## Client-side { data-transition="none" }
 
-- **TODO:** What to say?
+- Built with **AngularJS** and **Foundation**
+- Dialog with the server using **Websockets**
 
 <img data-src="img/foundation-angular.png" alt="Foundation + AngularJS" width="20%" height="20%"/>
 
@@ -207,7 +227,9 @@ notifications:
 
 # Results
 
-- **TODO:** Merge it with the precedent slide?
+- Main functionalities implemented
+- First universe adapted
+- Only as a local server
 
 # Next steps
 

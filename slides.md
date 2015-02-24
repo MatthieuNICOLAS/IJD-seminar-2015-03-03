@@ -9,26 +9,26 @@
 > - ... while the teacher helps the ones having trouble
 > - Used at *TELECOM Nancy* since 2008 
 
+# Current state
+
 ------
 
-## Initial situation
+## Overview { data-transition="none" }
 
 <img data-src="img/screen-PLM-1.png" alt="PLM" width="60%" height="60%"/>
 
 ------
 
-## Objective situation
+## Overview { data-transition="none" }
 
 <img data-src="img/screen-PLM-2.png" alt="PLM" width="60%" height="60%"/>
 
 ------
 
-## Program execution
+## Overview { data-transition="none" }
 
 <img data-src="img/screen-PLM-3.png" alt="PLM" width="60%" height="60%"/>
 
-
-# Current state
 
 ------
 

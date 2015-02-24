@@ -220,9 +220,9 @@ notifications:
 
 ## Client-side { data-transition="none" }
 
-- **TODO:** Video instead?
-
-<img data-src="img/webPLM.png" alt="webPLM" width="80%" height="80%"/>
+<video controls>
+	<source data-src="video/webPLM.mp4" type="video/mp4">
+</video>
 
 
 # Results

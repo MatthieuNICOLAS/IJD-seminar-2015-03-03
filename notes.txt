@@ -1,0 +1,27 @@
+- Plus expliquer Play Framework
+	- Serveur d'application en Scala
+- Présenter architecture client-serveur
+	- Un exemple d'appel
+- Webification => MOOC, pouvoir monter un MOOC de programmation à partir des exos de PLM
+- Renforcer l'attention des élèves
+	- 1% de rétention dans les MOOCs
+- Expliquer les traces d'utilisateurs/session d'utilisateur
+- Reprendre 3 groupes d'utilisateur pour expliquer Git
+	- Elèves cherchent à récupérer leur session
+	- Enseignants cherchent à suivre la progression des élèves
+	- Chercheurs veulent réfléchir au processus d'apprentissage
+- Parler de Dart
+- "Add debug mode" -> "Embed debugger"
+- Sortir la vidéo des slides?
+- "Current State" -> "Project status/State before ADT"
+- Plus de traduction italienne
+- Commence à avoir des contributions extérieures
+- Disponible dans les paquets Debian
+- "Lost some tracks" -> "Lost data"
+- Moissonneur?
+- Pourquoi Git en BDD?
+	- Versionner le code des utilisateurs
+- Prochaines étapes
+	- Passage en web pur
+	- Chat vidéo
+	=> Pouvoir faire cours à grande échelle

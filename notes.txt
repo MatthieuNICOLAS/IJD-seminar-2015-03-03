@@ -3,7 +3,6 @@
 - Présenter architecture client-serveur
 	- Un exemple d'appel
 - Parler de Dart
-- "Add debug mode" -> "Embed debugger"
 - Sortir la vidéo des slides?
 - Plus de traduction italienne
 - Commence à avoir des contributions extérieures

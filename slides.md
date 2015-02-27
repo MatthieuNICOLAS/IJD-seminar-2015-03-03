@@ -32,6 +32,13 @@
 
 ------
 
+## Test { data-transition="none" }
+
+<img data-src="img/architecture-diagram-1.png" alt="PLM" width="60%" height="60%"/>
+
+
+------
+
 ## 200 exercises { data-transition="none" }
 
 <img data-src="img/welcome.png" alt="Welcome" width="80%" height="80%"/>
@@ -91,7 +98,6 @@
 	totaltests:"1",
 	outcome:"pass"
 }</code></pre>
-
 
 # ADT's goals
 
@@ -239,7 +245,6 @@ notifications:
 	<source data-src="video/webPLM.mp4" type="video/mp4">
 </video>
 
-
 # Results
 
 - Main functionalities implemented
@@ -260,7 +265,6 @@ notifications:
 Do you have any questions?
 
 <script>
-
 	document.getElementsByAttribute = Element.prototype.getElementsByAttribute = function(attr) {
 	    var nodeList = this.getElementsByTagName('*');
 	    var nodeArray = [];

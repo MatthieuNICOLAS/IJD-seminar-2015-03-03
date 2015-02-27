@@ -9,7 +9,7 @@
 > - ... while the teacher helps the ones having trouble
 > - Used at *TELECOM Nancy* since 2008 
 
-# Current state
+# State before ADT
 
 ------
 
@@ -60,6 +60,39 @@
 
 <img data-src="img/languages-flags.svg" alt="Flags"/>
 
+------
+
+## User tracking { data-transition="none" }
+
+- Keep the students' sessions
+- Track the students' progress
+
+------
+
+## User tracking { data-transition="none" }
+
+- **git** used in order to version the student's code
+- Local repository and anonymous branch
+- Data pushed to a **GitHub** repository
+
+<img data-src="img/git.png" alt="Git" width="50%" height="50%"/>
+
+------
+
+## User tracking { data-transition="none" }
+
+- User's actions stored as commits
+
+<pre><code data-trim>{ 
+	kind:"executed",
+	lang:"Java",
+	exo:"welcome.lessons.welcome.instructions.Instructions", 
+	passedtests:"1",
+	totaltests:"1",
+	outcome:"pass"
+}</code></pre>
+
+
 # ADT's goals
 
 ------
@@ -77,8 +110,14 @@
 ## Attract students
 
 - More teaching content
-- More user-friendly
+- Webification
 - Gamification
+
+<div class="notes">
+	- Webification => MOOC, pouvoir monter un MOOC de programmation à partir des exos de PLM
+	- Renforcer l'attention des élèves
+		- 1% de rétention dans les MOOCs
+</div>
 
 ------
 
@@ -109,33 +148,9 @@
 
 ------
 
-## User tracking { data-transition="none" }
+## Debug user tracking
 
-- **git** as a database management system
-
-<img data-src="img/git.png" alt="Git" width="50%" height="50%"/>
-
-------
-
-## User tracking { data-transition="none" }
-
-- User's actions stored as commits
-
-<pre><code data-trim>{ 
-	kind:"executed",
-	lang:"Java",
-	exo:"welcome.lessons.welcome.instructions.Instructions", 
-	passedtests:"1",
-	totaltests:"1",
-	outcome:"pass"
-}</code></pre>
-
-------
-
-## User tracking { data-transition="none" }
-
-- Data pushed anonymously to a **GitHub** repository...
-- ... but lost some tracks
+- Lost data
 - Fixed and refactored the code
 
 ------
@@ -233,10 +248,10 @@ notifications:
 
 # Next steps
 
-- Set up the **CI** for **webPLM**
 - Convert other universes
-- Add debug mode
-- Add **C** language
+- Embed debugging tools
+- Support **C** language
+- To a web server
 
 ------
 

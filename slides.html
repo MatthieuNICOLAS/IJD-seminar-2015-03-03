@@ -44,8 +44,8 @@
 <li class="fragment">Used at <em>TELECOM Nancy</em> since 2008</li>
 </ul>
 </section>
-<section id="current-state" class="slide level1">
-<h1>Current state</h1>
+<section id="state-before-adt" class="slide level1">
+<h1>State before ADT</h1>
 </section>
 <section class="slide level1">
 
@@ -87,6 +87,39 @@
 <h2 id="languages">Languages</h2>
 <p><img data-src="img/languages-flags.svg" alt="Flags"/></p>
 </section>
+<section class="slide level1">
+
+<h2 id="user-tracking" data-transition="none">User tracking</h2>
+<ul>
+<li>Keep the students' sessions</li>
+<li>Track the students' progress</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="user-tracking-1" data-transition="none">User tracking</h2>
+<ul>
+<li><strong>git</strong> used in order to version the student's code</li>
+<li>Local repository and anonymous branch</li>
+<li>Data pushed to a <strong>GitHub</strong> repository</li>
+</ul>
+<p><img data-src="img/git.png" alt="Git" width="50%" height="50%"/></p>
+</section>
+<section class="slide level1">
+
+<h2 id="user-tracking-2" data-transition="none">User tracking</h2>
+<ul>
+<li>User's actions stored as commits</li>
+</ul>
+<pre><code data-trim>{ 
+    kind:"executed",
+    lang:"Java",
+    exo:"welcome.lessons.welcome.instructions.Instructions", 
+    passedtests:"1",
+    totaltests:"1",
+    outcome:"pass"
+}</code></pre>
+</section>
 <section id="adts-goals" class="slide level1">
 <h1> ADT's goals</h1>
 </section>
@@ -104,9 +137,14 @@
 <h2 id="attract-students"> Attract students</h2>
 <ul>
 <li>More teaching content</li>
-<li>More user-friendly</li>
+<li>Webification</li>
 <li>Gamification</li>
 </ul>
+<aside class="notes">
+<pre><code>- Webification =&gt; MOOC, pouvoir monter un MOOC de programmation à partir des exos de PLM
+- Renforcer l&#39;attention des élèves
+    - 1% de rétention dans les MOOCs</code></pre>
+</aside>
 </section>
 <section class="slide level1">
 
@@ -143,33 +181,9 @@
 </section>
 <section class="slide level1">
 
-<h2 id="user-tracking" data-transition="none">User tracking</h2>
+<h2 id="debug-user-tracking"> Debug user tracking</h2>
 <ul>
-<li><strong>git</strong> as a database management system</li>
-</ul>
-<p><img data-src="img/git.png" alt="Git" width="50%" height="50%"/></p>
-</section>
-<section class="slide level1">
-
-<h2 id="user-tracking-1" data-transition="none">User tracking</h2>
-<ul>
-<li>User's actions stored as commits</li>
-</ul>
-<pre><code data-trim>{ 
-    kind:"executed",
-    lang:"Java",
-    exo:"welcome.lessons.welcome.instructions.Instructions", 
-    passedtests:"1",
-    totaltests:"1",
-    outcome:"pass"
-}</code></pre>
-</section>
-<section class="slide level1">
-
-<h2 id="user-tracking-2" data-transition="none"> User tracking</h2>
-<ul>
-<li>Data pushed anonymously to a <strong>GitHub</strong> repository...</li>
-<li>... but lost some tracks</li>
+<li>Lost data</li>
 <li>Fixed and refactored the code</li>
 </ul>
 </section>
@@ -262,11 +276,8 @@ notifications:
 
 <h2 id="client-side-1" data-transition="none"> Client-side</h2>
 <video controls>
-    
-<source data-src="video/webPLM.mp4" type="video/mp4">
+<pre><code>&lt;source data-src=&quot;video/webPLM.mp4&quot; type=&quot;video/mp4&quot;&gt;</code></pre>
 </video>
-
-
 </section>
 <section id="results" class="slide level1">
 <h1>Results</h1>
@@ -279,10 +290,10 @@ notifications:
 <section id="next-steps" class="slide level1">
 <h1>Next steps</h1>
 <ul>
-<li>Set up the <strong>CI</strong> for <strong>webPLM</strong></li>
 <li>Convert other universes</li>
-<li>Add debug mode</li>
-<li>Add <strong>C</strong> language</li>
+<li>Embed debugging tools</li>
+<li>Support <strong>C</strong> language</li>
+<li>To a web server</li>
 </ul>
 </section>
 <section class="slide level1">

@@ -29,14 +29,6 @@
 
 <img data-src="img/screen-PLM-3.png" alt="PLM" width="60%" height="60%"/>
 
-
-------
-
-## Test { data-transition="none" }
-
-<img data-src="img/architecture-diagram-1.png" alt="PLM" width="60%" height="60%"/>
-
-
 ------
 
 ## 200 exercises { data-transition="none" }
@@ -221,19 +213,42 @@ notifications:
 
 ------
 
-## Server-side { data-transition="none" }
+## Play Framework { data-transition="none" }
 
-- Refactoring **PLM** into a library
-- Set up a server using **Play framework**
+- Java and Scala web application framework
+- Allow to set up application server
 
 <img data-src="img/play.svg" alt="Play Framework" width="30%" height="30%"/>
 
 ------
 
+## MVC pattern { data-transition="none" }
+
+<img data-src="img/architecture-diagram-1.png" alt="PLM" width="60%" height="60%"/>
+
+------
+
+## Actors { data-transition="none" }
+
+- Concurrent and scalable
+- *'Let it crash'*
+
+<img data-src="img/architecture-diagram-2.png" alt="PLM" width="50%" height="50%"/>
+
+------
+
+## Refactor PLM 
+
+- To be used as a library
+- Remove the current UI
+- Keep track of the world's evolution
+
+------
+
 ## Client-side { data-transition="none" }
 
-- Built with **AngularJS** and **Foundation**
-- Dialog with the server using **Websockets**
+- One-page application built with **AngularJS**
+- UI made with **Foundation**
 
 <img data-src="img/foundation-angular.png" alt="Foundation + AngularJS" width="20%" height="20%"/>
 

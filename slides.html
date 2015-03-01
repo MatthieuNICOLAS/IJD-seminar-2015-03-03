@@ -11,19 +11,10 @@
   <link rel="stylesheet" href="reveal.js/css/reveal.min.css"/>
     <style type="text/css">code{white-space: pre;}</style>
     <link rel="stylesheet" href="reveal.js/css/theme/sky.css"/>
-    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
-    <script>
-      if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'reveal.js/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-      }
-    </script>
-    <!--[if lt IE 9]>
-    <script src="reveal.js/lib/js/html5shiv.js"></script>
-    <![endif]-->
+  <link rel="stylesheet" media="print" href="reveal.js/css/print/pdf.css" />
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
 </head>
 <body>
   <div class="reveal">
@@ -119,6 +110,7 @@
     totaltests:"1",
     outcome:"pass"
 }</code></pre>
+
 </section>
 <section id="adts-goals" class="slide level1">
 <h1> ADT's goals</h1>
@@ -279,11 +271,33 @@ notifications:
 </section>
 <section class="slide level1">
 
-<h2 id="refactor-plm"> Refactor PLM</h2>
+<h2 id="working-with-websockets" data-transition="none">Working with websockets</h2>
+<ul>
+<li>Controller only needed to render views</li>
+<li>One actor per websocket</li>
+</ul>
+<p><img data-src="img/architecture-diagram-3.png" alt="PLM" width="50%" height="50%"/></p>
+</section>
+<section class="slide level1">
+
+<h2 id="refactor-plm" data-transition="none"> Refactor PLM</h2>
 <ul>
 <li>To be used as a library</li>
 <li>Remove the current UI</li>
-<li></li>
+<li>Keep track of the world's evolution</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="refactor-plm-1" data-transition="none"> Refactor PLM</h2>
+<ul>
+<li>Has to update the server's and the client's world model</li>
+<li>Each time the world is modified...
+<pre><code data-trim>setBugglePosition(newX, newY)</code></pre></li>
+<li>... the corresponding operation is generated
+<pre><code data-trim>//Operation stored then send to the client
+moveBuggleOperation(oldX, oldY, newX, newY)</code></pre>
+</li>
 </ul>
 </section>
 <section class="slide level1">
@@ -299,8 +313,10 @@ notifications:
 
 <h2 id="client-side-1" data-transition="none"> Client-side</h2>
 <video controls>
-<pre><code>&lt;source data-src=&quot;video/webPLM.mp4&quot; type=&quot;video/mp4&quot;&gt;</code></pre>
+    
+<source data-src="video/webPLM.mp4" type="video/mp4">
 </video>
+
 </section>
 <section id="results" class="slide level1">
 <h1>Results</h1>
@@ -345,10 +361,11 @@ notifications:
 
     reportAttributeToParent('data-transition');
 </script>
+
+
 </section>
     </div>
   </div>
-
 
   <script src="reveal.js/lib/js/head.min.js"></script>
   <script src="reveal.js/js/reveal.min.js"></script>
@@ -374,5 +391,5 @@ notifications:
 //          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 ]});
     </script>
-    </body>
+  </body>
 </html>

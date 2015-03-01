@@ -237,11 +237,31 @@ notifications:
 
 ------
 
-## Refactor PLM 
+## Working with websockets { data-transition="none" }
+
+- Controller only needed to render views
+- One actor per websocket
+
+<img data-src="img/architecture-diagram-3.png" alt="PLM" width="50%" height="50%"/>
+
+------
+
+## Refactor PLM { data-transition="none" }
 
 - To be used as a library
 - Remove the current UI
 - Keep track of the world's evolution
+
+------
+
+## Refactor PLM { data-transition="none" }
+
+- Has to update the server's and the client's world model
+- Each time the world is modified...
+<pre><code data-trim>setBugglePosition(newX, newY)</code></pre>
+- ... the corresponding operation is generated
+<pre><code data-trim>//Operation stored then send to the client
+moveBuggleOperation(oldX, oldY, newX, newY)</code></pre>
 
 ------
 

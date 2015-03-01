@@ -1,7 +1,3 @@
-- Plus expliquer Play Framework
-	- Serveur d'application en Scala
-- Présenter architecture client-serveur
-	- Un exemple d'appel
 - Parler de Dart
 - Sortir la vidéo des slides?
 - Plus de traduction italienne

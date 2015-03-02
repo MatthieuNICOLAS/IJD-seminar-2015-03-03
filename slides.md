@@ -176,10 +176,8 @@
 
 ## Continuous Integration { data-transition="none" }
 
-- Execute tests automatically when
-	- someone push to *master*
-	- a pull-request is created
-- Notify us when the build state change
+- Execute tests automatically when commits are pushed
+- Notify us as soon as a build failed
 <!--
 <div class="notes">
 - Easily configurable:
